@@ -23,6 +23,8 @@ file_to_save = os.path.join("Analysis", "election_analysis.txt")
 
 outfile = open(file_to_save, "w")
 
+outfile.write("Hello World")
+
 outfile.close()
 
 
