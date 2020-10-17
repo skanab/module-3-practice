@@ -6,3 +6,9 @@
 # 5. The winner of the election based on popular vote
 
 
+import datetime as dt
+
+now = dt.datetime.now()
+
+print(f'The time right now {now}')
+
