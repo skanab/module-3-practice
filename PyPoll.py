@@ -1,30 +1,15 @@
-# The data we need to retrieve.
-# 1. The total number of votes cast
-# 2. A complete list of canidates who received cotes
-# 3. The percentage of votes each candidate won
-# 4. The total number of votes each candidate won
-# 5. The winner of the election based on popular vote
-
-
-import datetime as dt
 import os
 import csv
 
-now = dt.datetime.now()
-
-print(f'The time right now {now}')
-
+#Setup the files we want to read and write to.
 file_to_load = os.path.join("Resources", "election_results.csv")
+file_to_save = os.path.join("Analysis", "election_analysis.txt")
 
+#Read File
 with open(file_to_load) as election_data:
     print(election_data)
 
-file_to_save = os.path.join("Analysis", "election_analysis.txt")
-
-outfile = open(file_to_save, "w")
-
-outfile.write("Hello World")
-
-outfile.close()
-
+#Write File
+with open(file_to_save, 'w') as election_analysis:
+    election_analysis.write("Hello World!")
 
